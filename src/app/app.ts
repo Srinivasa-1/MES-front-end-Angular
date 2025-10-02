@@ -4,7 +4,7 @@ import { RouterModule, RouterOutlet } from '@angular/router';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
-import { OrderList } from './order-list/order-list';
+
 
 @Component({
   selector: 'app-root',
@@ -12,8 +12,7 @@ import { OrderList } from './order-list/order-list';
     RouterModule,
     MatToolbarModule,
     MatIconModule,
-    MatButtonModule,
-    OrderList],
+    MatButtonModule],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

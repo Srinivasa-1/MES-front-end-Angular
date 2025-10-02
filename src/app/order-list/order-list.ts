@@ -104,4 +104,18 @@ openCreateDialog(): void {
   });
 }
 
+
+openEditDialog(order: Order): void {
+  const dialogRef = this.dialog.open(OrderFrom, {
+    width: '500px',
+    data: { order: order } // Pass the order to edit
+  });
+
+  dialogRef.afterClosed().subscribe((result: boolean) => {
+    if (result) {
+      this.loadOrders(); // Refresh the list after update
+    }
+  });
+}
+
 }

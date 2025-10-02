@@ -215,3 +215,23 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #a8a8a8;
 }
+
+.brand-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-icon {
+  font-size: 28px;
+  width: 28px;
+  height: 28px;
+  color: black; /* Change icon to black */
+}
+
+.app-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: black !important; /* Force black color */
+  margin: 0;
+}
