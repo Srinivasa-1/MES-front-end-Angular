@@ -14,6 +14,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { Order, OrderStatus, PageResponse } from '../model/Order';
 import { OrderService } from '../service/OrderService';
 import { CommonModule } from '@angular/common';
+import { Orderfromcomponent } from '../orderfromcomponent/orderfromcomponent';
 
 @Component({
   selector: 'app-order-list-component',
@@ -29,7 +30,8 @@ import { CommonModule } from '@angular/common';
     MatSnackBarModule,
     MatChipsModule,
     MatProgressSpinnerModule,
-    CommonModule
+    CommonModule,
+    Orderfromcomponent
   ],
   templateUrl: './order-list-component.html',
   styleUrl: './order-list-component.css'
@@ -93,7 +95,7 @@ export class OrderListComponent {
 
   openCreateDialog(): void {
     console.log('Opening create order dialog');
-    const dialogRef = this.dialog.open(OrderFormComponent, {
+    const dialogRef = this.dialog.open(Orderfromcomponent, {
       width: '600px',
       data: { mode: 'create' }
     });
@@ -108,7 +110,7 @@ export class OrderListComponent {
 
   openEditDialog(order: Order): void {
     console.log('Opening edit dialog for order:', order);
-    const dialogRef = this.dialog.open(OrderFormComponent, {
+    const dialogRef = this.dialog.open(Orderfromcomponent, {
       width: '600px',
       data: { mode: 'edit', order }
     });

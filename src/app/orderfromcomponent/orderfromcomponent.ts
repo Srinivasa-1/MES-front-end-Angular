@@ -1,5 +1,5 @@
 import { Component, Inject } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { OrderService } from '../service/OrderService';
 import { Order, OrderStatus } from '../model/Order';
 import { MAT_DIALOG_DATA, MatDialogRef, MatDialogContent } from '@angular/material/dialog';
@@ -33,7 +33,8 @@ import { CommonModule } from '@angular/common';
     MatSnackBarModule,
     MatChipsModule,
     MatProgressSpinnerModule,
-    CommonModule
+    CommonModule,
+    ReactiveFormsModule
   ],
   templateUrl: './orderfromcomponent.html',
   styleUrl: './orderfromcomponent.css'
