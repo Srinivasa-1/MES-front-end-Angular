@@ -69,6 +69,7 @@ export class OrderFrom {
 
   onSubmit(): void {
     if (this.orderForm.valid) {
+      //storing submitted form values in formData
       const formData = this.orderForm.value;
       
       // For edit mode, include the original order number
@@ -97,6 +98,7 @@ export class OrderFrom {
     this.dialogRef.close(false);
   }
 
+  //this is to show title
   getTitle(): string {
     return this.isEditMode ? 'Edit Order' : 'Create New Order';
   }

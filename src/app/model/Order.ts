@@ -3,6 +3,7 @@ export interface Order {
   orderNumber: string;
   productName: string;
   quantity: number;
+  //the enum calss is here
   status: OrderStatus;
   customerName: string;
   priority: string;
