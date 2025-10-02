@@ -1,0 +1,11 @@
+.order-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px 0;
+  min-width: 400px;
+}
+
+.full-width {
+  width: 100%;
+}
